@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Parque Nacional Llanganates</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #171718;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #16a085;
+        }
+        .gallery-container {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-container h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #171718;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .video-container {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video-container h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #171718;
+        }
+        .video-container video {
+            width: 60%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .video-description {
+            margin-bottom: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-description h3 {
+            font-size: 1.5em;
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+        .video-description p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #171718;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería del Parque Nacional Llanganates</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <section class="gallery-container">
+        <h2>Imágenes del Parque</h2>
+        <div class="gallery">
+            <img src="https://www.phisiqueclub.com/wp-content/uploads/2023/06/55b6eb12-d235-490b-9ce4-c57dbb17c51e-Portada.jpg" alt="Paisaje 1">
+            <img src="https://imgs.mongabay.com/wp-content/uploads/sites/25/2025/01/27151941/D54eGErWAAAXuTj-e1737991209999-768x442.jpeg" alt="Paisaje 2">
+            <img src="https://www.parks-and-tribes.com/national-parks/parque-nacional-cajas/paramo_ecuador_park_tour_small.jpg" alt="Paisaje 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWw_gxCEOicf9qA7Maqr35ZPVGtpJhRRMJg&s" alt="Paisaje 4">
+            <img src="https://www.ecuavisa.com/binrepository/1205x695/48c2/825d600/none/11705/YYSW/d0pvayawoay0gaa_1473235_20240412171433.jpg" alt="Paisaje 5">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/79/46/2a/79462a48cac8cb7594cfa89e1a2a830c.jpg" alt="Paisaje 6">
+            <img src="https://www.ambiente.gob.ec/wp-content/uploads/2015/02/DSC00170.jpg" alt="Paisaje 7">
+            <img src="https://youtopiaecuador.com/content/images/size/w600/wordpress/2023/02/Cortesia-de-la-Prefectura-de-Tungurahua-6.jpg" alt="Paisaje 8">
+        </div>
+    </section>
+    <section class="video-container">
+        <h2>Videos del Parque</h2>
+
+        <!-- Primer video: Carrera de Llamingos -->
+        <div class="video-description">
+            <h3>Carrera de Llamingos</h3>
+            <p>
+                La carrera de Llamingos es una tradición única que se celebra en el Parque Nacional Llanganates. Durante este evento, los participantes y sus llamas recorren senderos espectaculares, demostrando la conexión entre el ser humano y la naturaleza. Esta actividad no solo promueve el turismo sostenible, sino que también rinde homenaje a la cultura andina y su relación con estos animales emblemáticos.
+            </p>
+        </div>
+        <video controls>
+            <source src="llanganate.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+
+
+        <div class="video-description">
+            <h3>Las Lagunas del Parque</h3>
+            <p>
+                Las lagunas del Parque Nacional Llanganates son uno de sus mayores atractivos. Estas aguas cristalinas, rodeadas de montañas y vegetación exuberante, son el hogar de una gran variedad de especies animales y vegetales. Las lagunas también están envueltas en misterio, ya que se dice que en sus profundidades se esconden secretos y leyendas ancestrales. Un lugar perfecto para la contemplación y el ecoturismo.
+            </p>
+        </div>
+        <video controls>
+            <source src="Tesoro_oculto.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </section>
+    <footer>
+        <p>&copy; 2023 Guía de Viajes - Parque Llanganates</p>
+    </footer>
+</body>
+</html>

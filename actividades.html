@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades - Parque Nacional Llanganates</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .activities-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .activity-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .activity-card {
+            width: 30%;
+            min-width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .activity-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .activity-card h3 {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        .activity-card p {
+            padding: 0 15px 15px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .guide-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .guide-section a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .guide-section a:hover {
+            background-color: #45a049;
+        }
+
+        .pdf-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Actividades en el Parque Nacional Llanganates</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div class="activities-container">
+        <div class="activity-grid">
+            <div class="activity-card">
+                <img src="https://www.nanmagazine.com/wp-content/uploads/2024/08/llanganates-24.jpg" alt="Senderismo">
+                <h3>Senderismo</h3>
+                <p>Explora los increíbles senderos del parque rodeado de paisajes montañosos.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkUo1j0fyKbbeObPjL6d00B287m51OB9tIQ&s" alt="Observación de Aves">
+                <h3>Observación de Aves</h3>
+                <p>Descubre una gran variedad de aves, incluyendo el cóndor andino.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://www.ambiente.gob.ec/wp-content/uploads/2013/05/Ecotallerista-admira-laghuna.jpg" alt="Fotografía de Naturaleza">
+                <h3>Fotografía de Naturaleza</h3>
+                <p>Captura los impresionantes paisajes, flora y fauna del parque.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://media.istockphoto.com/id/941352856/es/foto/chico-y-chica-pararse-cerca-de-las-tiendas-bajo-un-cielo-estrellado-tel%C3%B3n-de-fondo-de-monta%C3%B1as.jpg?s=612x612&w=0&k=20&c=mR54i8oA_I3dWfhaltpO_MilN4DoBe9KXoU7qDRw3gg=" alt="Camping">
+                <h3>Camping</h3>
+                <p>Vive una experiencia única acampando bajo las estrellas.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://i.ytimg.com/vi/90wpfX88cuw/maxresdefault.jpg" alt="Exploración de Lagunas">
+                <h3>Exploración de Lagunas</h3>
+                <p>Visita las misteriosas lagunas del parque rodeadas de leyendas.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV8Vbm8NUmOUtBvhXFhvVoXV24q7sCKqhexQ&s" alt="Investigación Ecológica">
+                <h3>Investigación Ecológica</h3>
+                <p>Participa en estudios científicos sobre la biodiversidad del parque.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="guide-section">
+        <h2>Guía para realizar los tours</h2>
+        <p>Consulta la guía completa para saber más sobre los tours que ofrecemos en el Parque Nacional Llanganates.</p>
+        <a href="http://documentoskoha.s3.amazonaws.com/6592.pdf" target="_blank">Descargar Guía en PDF</a>
+    </div>
+    <div class="phrase-section" style="text-align: center; margin-top: 40px;">
+        <h2>¡La Aventura te espera!</h2>
+        <p>Sumérgete en la majestuosidad de la naturaleza, explora el corazón de los Andes y descubre un paraíso lleno de vida, historia y misterio. ¡El Parque Nacional Llanganates te espera!</p>
+        <img src="https://imgcap.capturetheatlas.com/wp-content/uploads/2022/02/1.jpg" alt="Imagen Aventura" width="300">
+    </div>
+    <div class="pdf-container">
+        <h3>Vista Previa de la Guía</h3>
+        <iframe src="http://documentoskoha.s3.amazonaws.com/6592.pdf" title="Guía de Tours"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Guía de Viajes - Parque Llanganates. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
